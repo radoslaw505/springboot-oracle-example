@@ -3,18 +3,19 @@ package com.binge.radoslaw.OracleJDBC.model;
 import javax.persistence.*;
 
 @Entity // This tells Hibernate to make a table out of this class
-@Table(name = "employee2")
+@Table(name = "EMPLOYEES2")
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "employee_id")
+    @GeneratedValue(generator = "employees_seq")
+    @SequenceGenerator(name = "employees_seq", sequenceName = "EMPLOYEES2_SEQ", allocationSize = 1)
+    @Column(name = "ID")
     private Integer id;
 
-    @Column(name = "first_name")
+    @Column(name = "FIRST_NAME")
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column(name = "LAST_NAME")
     private String lastName;
 
     @Override
