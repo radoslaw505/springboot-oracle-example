@@ -18,13 +18,24 @@ public class Employee {
     @Column(name = "LAST_NAME")
     private String lastName;
 
+    @Column(name = "LOGIN")
+    private String login;
+
+    @Column(name = "CURRENT_ON")
+    private String currentOn;
+
     @Override
     public String toString() {
         return "Employee{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", login='" + login + '\'' +
+                ", currentOn='" + currentOn + '\'' +
                 '}';
+    }
+
+    public Employee() {
     }
 
     public Integer getId() {
@@ -51,6 +62,19 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public Employee() {
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getCurrentOn() {
+        return currentOn;
+    }
+
+    public void setCurrentOn(String curentOn) {
+        this.currentOn = curentOn;
     }
 }

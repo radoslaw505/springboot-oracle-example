@@ -23,9 +23,11 @@ public class EmployeeController {
 //         @RequestParam means it is a parameter from the GET or POST request
 
         Employee n = new Employee();
+
         n.setFirstName(firstName);
         n.setLastName(lastName);
         employeeRepository.save(n);
+
         return "Saved";
     }
 
@@ -33,6 +35,28 @@ public class EmployeeController {
     public @ResponseBody Iterable<Employee> getAllUEmployees() {
         // This returns a JSON or XML with the users
         return employeeRepository.findAll();
+    }
+
+    @PostMapping(path="/setOnSite")
+    public @ResponseBody String setOnSite(@RequestParam String login) {
+
+        Employee employeeDetachOnSite = employeeRepository.findByCurrentOn("On Site");
+        Employee employeeAttachOnSite = employeeRepository.findByLogin(login);
+
+        if (employeeDetachOnSite != null) {
+            employeeDetachOnSite.setCurrentOn(null);
+            employeeRepository.save(employeeDetachOnSite);
+        }
+
+        employeeAttachOnSite.setCurrentOn("On Site");
+        employeeRepository.save(employeeAttachOnSite);
+
+        return "On site operator changed.";
+    }
+
+    @GetMapping(path="/getOnSite")
+    public @ResponseBody Employee getOnSite() {
+        return employeeRepository.findByCurrentOn("On Site");
     }
 
 }
