@@ -4,6 +4,7 @@ import com.binge.radoslaw.OracleJDBC.model.Employee;
 import com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
@@ -31,10 +32,16 @@ public class EmployeeController {
         return "Saved";
     }
 
-    @GetMapping(path="/employee")
+    @GetMapping(path="/getall")
     public @ResponseBody Iterable<Employee> getAllUEmployees() {
         // This returns a JSON or XML with the users
         return employeeRepository.findAll();
+    }
+
+    @GetMapping("/showall")
+    public String showAllUEmployees(Model model) {
+        model.addAttribute("employees", employeeRepository.findAllByOrderByLastNameAscFirstNameAsc());
+        return "employee";
     }
 
     @PostMapping(path="/setOnSite")
@@ -51,7 +58,7 @@ public class EmployeeController {
         employeeAttachOnSite.setCurrentOn("On Site");
         employeeRepository.save(employeeAttachOnSite);
 
-        return "On site operator changed.";
+        return "showall";
     }
 
     @GetMapping(path="/getOnSite")
