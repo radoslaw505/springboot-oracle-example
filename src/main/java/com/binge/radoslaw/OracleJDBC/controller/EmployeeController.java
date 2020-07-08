@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 
 @Controller // This means that this class is a Controller
 @RequestMapping(path="/operators") // This means URL's start with /demo (after Application path)
