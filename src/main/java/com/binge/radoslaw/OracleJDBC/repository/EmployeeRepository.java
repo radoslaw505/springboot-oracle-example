@@ -1,7 +1,9 @@
 package com.binge.radoslaw.OracleJDBC.repository;
 
 import com.binge.radoslaw.OracleJDBC.model.Employee;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
@@ -16,5 +18,8 @@ public interface EmployeeRepository extends CrudRepository<Employee, Long> {
     Employee findByCurrentOn(String currentOn);
 
     List<Employee> findAllByOrderByLastNameAscFirstNameAsc();
+
+    @Query("SELECT e FROM Employee e WHERE (e.currentOn is not null or e.currentOn = :currentOn)")
+    List<Employee> findAllByCurrentOn(@Param("currentOn") String currentOn);
 
 }

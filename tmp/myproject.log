@@ -2283,3 +2283,903 @@ javax.persistence.NonUniqueResultException: query did not return a unique result
 2020-07-09 00:14:56.201 [INFO] [http-nio-8080-exec-10] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from pauell to kaldug.
 2020-07-09 00:14:56.923 [INFO] [http-nio-8080-exec-2] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from kaldug to holcas.
 2020-07-09 00:14:57.498 [INFO] [http-nio-8080-exec-4] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from holcas to pamcan.
+2020-07-09 00:26:17.333 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 14528 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:26:17.349 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:26:18.913 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:26:19.007 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 81ms. Found 1 JPA repository interfaces.
+2020-07-09 00:26:20.100 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:26:20.116 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:26:20.116 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:26:20.116 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:26:20.350 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:26:20.350 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 2874 ms
+2020-07-09 00:26:20.852 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:26:20.949 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:26:20.998 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:26:21.089 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:26:21.355 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:26:21.496 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:26:21.965 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:26:22.012 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:26:23.345 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:26:23.361 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:26:24.102 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:26:24.144 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:26:24.146 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:26:24.462 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:558] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn()!
+2020-07-09 00:26:24.464 [INFO] [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:26:24.467 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:26:24.468 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2020-07-09 00:26:24.514 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2020-07-09 00:26:24.521 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Pausing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:26:24.531 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2020-07-09 00:26:24.536 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:26:24.540 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Destroying ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:26:24.550 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-09 00:26:24.554 [ERROR] [main] [org.springframework.boot.SpringApplication:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn()!
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:178)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1266)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:260)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:623)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:611)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.binge.radoslaw.OracleJDBC.OracleJdbcApplication.main(OracleJdbcApplication.java:10)
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn()!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:146)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:216)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1056)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:94)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:84)
+	at java.base/java.util.Optional.map(Optional.java:258)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:84)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:331)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:244)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:57)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: employees2 is not mapped [SELECT e FROM employees2 e WHERE e.currentOn is not null]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:725)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:366)
+	at com.sun.proxy.$Proxy66.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87)
+	... 52 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: employees2 is not mapped [SELECT e FROM employees2 e WHERE e.currentOn is not null]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.generateQueryException(QuerySyntaxException.java:79)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:220)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	... 60 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: employees2 is not mapped
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:169)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:91)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:79)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:333)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3758)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3647)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:732)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:588)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:325)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:273)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:272)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	... 66 common frames omitted
+2020-07-09 00:27:26.547 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 11668 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:27:26.563 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:27:28.019 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:27:28.112 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 82ms. Found 1 JPA repository interfaces.
+2020-07-09 00:27:29.253 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:27:29.268 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:27:29.268 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:27:29.268 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:27:29.550 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:27:29.550 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 2862 ms
+2020-07-09 00:27:29.971 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:27:30.062 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:27:30.101 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:27:30.199 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:27:30.547 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:27:30.703 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:27:31.156 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:27:31.234 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:27:32.705 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:27:32.720 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:27:33.435 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:27:33.472 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:27:33.473 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:27:33.790 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:558] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn()!
+2020-07-09 00:27:33.794 [INFO] [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:27:33.797 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:27:33.800 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2020-07-09 00:27:33.828 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2020-07-09 00:27:33.854 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Pausing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:27:33.863 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2020-07-09 00:27:33.868 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:27:33.871 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Destroying ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:27:33.881 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-09 00:27:33.886 [ERROR] [main] [org.springframework.boot.SpringApplication:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn()!
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:178)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1266)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:260)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:623)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:611)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.binge.radoslaw.OracleJDBC.OracleJdbcApplication.main(OracleJdbcApplication.java:10)
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn()!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:146)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:216)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1056)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:94)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:84)
+	at java.base/java.util.Optional.map(Optional.java:258)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:84)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:331)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:244)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:57)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: employees2 is not mapped [SELECT e FROM employees2 e WHERE e.currentOn is not null]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:725)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:366)
+	at com.sun.proxy.$Proxy66.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87)
+	... 52 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: employees2 is not mapped [SELECT e FROM employees2 e WHERE e.currentOn is not null]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.generateQueryException(QuerySyntaxException.java:79)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:220)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	... 60 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: employees2 is not mapped
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:169)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:91)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:79)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:333)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3758)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3647)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:732)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:588)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:325)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:273)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:272)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	... 66 common frames omitted
+2020-07-09 00:28:33.230 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 15232 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:28:33.246 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:28:34.952 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:28:35.064 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 87ms. Found 1 JPA repository interfaces.
+2020-07-09 00:28:36.269 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:28:36.285 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:28:36.285 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:28:36.285 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:28:36.556 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:28:36.556 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3185 ms
+2020-07-09 00:28:37.187 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:28:37.287 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:28:37.392 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:28:37.436 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:28:37.735 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:28:37.939 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:28:38.392 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:28:38.438 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:28:39.961 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:28:39.978 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:28:40.784 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:28:40.855 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:28:40.865 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:28:41.289 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:558] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn()!
+2020-07-09 00:28:41.293 [INFO] [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:28:41.296 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:28:41.298 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2020-07-09 00:28:41.323 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2020-07-09 00:28:41.339 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Pausing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:28:41.351 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2020-07-09 00:28:41.358 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:28:41.361 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Destroying ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:28:41.376 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-09 00:28:41.384 [ERROR] [main] [org.springframework.boot.SpringApplication:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn()!
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:178)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1266)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:260)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:623)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:611)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.binge.radoslaw.OracleJDBC.OracleJdbcApplication.main(OracleJdbcApplication.java:10)
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn()!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:146)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:216)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1056)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:94)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:84)
+	at java.base/java.util.Optional.map(Optional.java:258)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:84)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:331)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:244)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:57)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: employee is not mapped [SELECT e FROM employee e WHERE e.currentOn is not null]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:725)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:366)
+	at com.sun.proxy.$Proxy66.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87)
+	... 52 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: employee is not mapped [SELECT e FROM employee e WHERE e.currentOn is not null]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.generateQueryException(QuerySyntaxException.java:79)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:220)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	... 60 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: employee is not mapped
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:169)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:91)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:79)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:333)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3758)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3647)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:732)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:588)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:325)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:273)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:272)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	... 66 common frames omitted
+2020-07-09 00:32:11.088 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 9220 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:32:11.088 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:32:12.579 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:32:12.673 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 87ms. Found 1 JPA repository interfaces.
+2020-07-09 00:32:13.720 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:32:13.735 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:32:13.735 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:32:13.735 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:32:14.032 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:32:14.032 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 2819 ms
+2020-07-09 00:32:14.465 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:32:14.544 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:32:14.591 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:32:14.677 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:32:14.949 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:32:15.137 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:32:15.605 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:32:15.652 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:32:17.231 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:32:17.244 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:32:17.858 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:32:17.893 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:32:17.898 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:32:18.109 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:558] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn(java.lang.String) but parameter 'Optional[name]' not found in annotated query 'SELECT e FROM employee e WHERE (e.currentOn is not null or e.currentOn = :currentOn)'!
+2020-07-09 00:32:18.112 [INFO] [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:32:18.115 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:32:18.116 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2020-07-09 00:32:18.159 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2020-07-09 00:32:18.163 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Pausing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:32:18.189 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2020-07-09 00:32:18.196 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:32:18.199 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Destroying ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:32:18.211 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-09 00:32:18.216 [ERROR] [main] [org.springframework.boot.SpringApplication:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn(java.lang.String) but parameter 'Optional[name]' not found in annotated query 'SELECT e FROM employee e WHERE (e.currentOn is not null or e.currentOn = :currentOn)'!
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:178)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1266)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:260)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:623)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:611)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.binge.radoslaw.OracleJDBC.OracleJdbcApplication.main(OracleJdbcApplication.java:10)
+Caused by: java.lang.IllegalStateException: Using named parameters for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn(java.lang.String) but parameter 'Optional[name]' not found in annotated query 'SELECT e FROM employee e WHERE (e.currentOn is not null or e.currentOn = :currentOn)'!
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.assertParameterNamesInAnnotatedQuery(JpaQueryMethod.java:157)
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.<init>(JpaQueryMethod.java:136)
+	at org.springframework.data.jpa.repository.query.DefaultJpaQueryMethodFactory.build(DefaultJpaQueryMethodFactory.java:44)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1056)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:94)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:84)
+	at java.base/java.util.Optional.map(Optional.java:258)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:84)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:331)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:244)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:57)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
+	... 24 common frames omitted
+2020-07-09 00:32:52.389 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 17312 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:32:52.405 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:32:53.958 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:32:54.037 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 79ms. Found 1 JPA repository interfaces.
+2020-07-09 00:32:55.083 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:32:55.099 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:32:55.114 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:32:55.114 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:32:55.380 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:32:55.380 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 2850 ms
+2020-07-09 00:32:55.899 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:32:55.999 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:32:56.055 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:32:56.132 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:32:56.366 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:32:56.553 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:32:57.014 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:32:57.076 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:32:58.459 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:32:58.471 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:32:59.161 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:32:59.196 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:32:59.198 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:32:59.472 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:558] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn(java.lang.String)!
+2020-07-09 00:32:59.474 [INFO] [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:32:59.477 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:32:59.481 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2020-07-09 00:32:59.541 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2020-07-09 00:32:59.546 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Pausing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:32:59.564 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2020-07-09 00:32:59.570 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:32:59.573 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Destroying ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:32:59.583 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-09 00:32:59.590 [ERROR] [main] [org.springframework.boot.SpringApplication:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn(java.lang.String)!
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:178)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1266)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:260)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:623)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:611)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.binge.radoslaw.OracleJDBC.OracleJdbcApplication.main(OracleJdbcApplication.java:10)
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn(java.lang.String)!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:146)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:216)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1056)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:94)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:84)
+	at java.base/java.util.Optional.map(Optional.java:258)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:84)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:331)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:244)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:57)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: employee is not mapped [SELECT e FROM employee e WHERE (e.currentOn is not null or e.currentOn = :currentOn)]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:725)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:366)
+	at com.sun.proxy.$Proxy66.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87)
+	... 52 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: employee is not mapped [SELECT e FROM employee e WHERE (e.currentOn is not null or e.currentOn = :currentOn)]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.generateQueryException(QuerySyntaxException.java:79)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:220)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	... 60 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: employee is not mapped
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:169)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:91)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:79)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:333)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3758)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3647)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:732)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:588)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:325)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:273)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:272)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	... 66 common frames omitted
+2020-07-09 00:33:35.423 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 10724 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:33:35.438 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:33:37.005 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:33:37.099 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 82ms. Found 1 JPA repository interfaces.
+2020-07-09 00:33:38.145 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:33:38.177 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:33:38.177 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:33:38.177 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:33:38.458 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:33:38.458 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 2895 ms
+2020-07-09 00:33:38.927 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:33:39.145 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:33:39.168 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:33:39.320 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:33:39.632 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:33:39.773 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:33:40.257 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:33:40.320 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:33:41.781 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:33:41.796 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:33:42.604 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:33:42.640 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:33:42.642 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:33:42.907 [WARN] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:558] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn(java.lang.String)!
+2020-07-09 00:33:42.910 [INFO] [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:33:42.913 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:33:42.918 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2020-07-09 00:33:42.939 [INFO] [main] [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2020-07-09 00:33:42.943 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Pausing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:33:42.954 [INFO] [main] [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
+2020-07-09 00:33:42.959 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Stopping ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:33:42.963 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Destroying ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:33:42.973 [INFO] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-09 00:33:42.978 [ERROR] [main] [org.springframework.boot.SpringApplication:837] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn(java.lang.String)!
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:178)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1266)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:260)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:623)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:611)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.binge.radoslaw.OracleJDBC.OracleJdbcApplication.main(OracleJdbcApplication.java:10)
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository.findAllByCurrentOn(java.lang.String)!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:146)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:216)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1056)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:94)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:84)
+	at java.base/java.util.Optional.map(Optional.java:258)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:84)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:331)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:244)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:57)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: employee is not mapped [SELECT e FROM employee e WHERE (e.currentOn is not null or e.currentOn = :currentOn)]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:725)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:366)
+	at com.sun.proxy.$Proxy66.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87)
+	... 52 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: employee is not mapped [SELECT e FROM employee e WHERE (e.currentOn is not null or e.currentOn = :currentOn)]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.generateQueryException(QuerySyntaxException.java:79)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:220)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	... 60 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: employee is not mapped
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:169)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:91)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:79)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:333)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3758)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3647)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:732)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:588)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:325)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:273)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:272)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	... 66 common frames omitted
+2020-07-09 00:34:25.484 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 3992 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:34:25.493 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:34:27.062 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:34:27.171 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 95ms. Found 1 JPA repository interfaces.
+2020-07-09 00:34:28.311 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:34:28.327 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:34:28.327 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:34:28.327 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:34:28.624 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:34:28.624 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3019 ms
+2020-07-09 00:34:29.063 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:34:29.181 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:34:29.181 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:34:29.333 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:34:29.630 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:34:29.793 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:34:30.244 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:34:30.297 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:34:31.767 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:34:31.778 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:34:32.472 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:34:32.548 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:34:32.550 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:34:32.878 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-09 00:34:32.886 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 8.354 seconds (JVM running for 9.481)
+2020-07-09 00:34:51.930 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-09 00:34:51.931 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2020-07-09 00:34:51.941 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 10 ms
+2020-07-09 00:35:14.947 [INFO] [http-nio-8080-exec-4] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from pamcan to holcas.
+2020-07-09 00:35:24.167 [INFO] [http-nio-8080-exec-7] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from holcas to pauell.
+2020-07-09 00:36:41.966 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 9740 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:36:41.966 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:36:43.637 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:36:43.774 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 115ms. Found 1 JPA repository interfaces.
+2020-07-09 00:36:44.893 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:36:44.909 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:36:44.909 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:36:44.909 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:36:45.206 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:36:45.206 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3100 ms
+2020-07-09 00:36:45.639 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:36:45.747 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:36:45.865 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:36:45.949 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:36:46.258 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:36:46.430 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:36:46.933 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:36:46.988 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:36:48.564 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:36:48.576 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:36:49.357 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:36:49.394 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:36:49.396 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:36:49.743 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-09 00:36:49.743 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 8.86 seconds (JVM running for 9.908)
+2020-07-09 00:37:24.838 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-09 00:37:24.839 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2020-07-09 00:37:24.852 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 13 ms
+2020-07-09 00:37:37.407 [INFO] [http-nio-8080-exec-4] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from pauell to pamcan.
+2020-07-09 00:37:39.698 [INFO] [http-nio-8080-exec-6] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from pamcan to holcas.
+2020-07-09 00:37:52.715 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 5604 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:37:52.722 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:37:54.436 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:37:54.514 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 77ms. Found 1 JPA repository interfaces.
+2020-07-09 00:37:55.593 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:37:55.625 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:37:55.625 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:37:55.625 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:37:55.906 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:37:55.906 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3077 ms
+2020-07-09 00:37:56.341 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:37:56.493 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:37:56.493 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:37:56.621 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:37:56.933 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:37:57.089 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:37:57.589 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:37:57.652 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:37:59.329 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:37:59.343 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:38:00.308 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:38:00.355 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:38:00.375 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:38:00.713 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-09 00:38:00.725 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 9.056 seconds (JVM running for 10.078)
+2020-07-09 00:38:12.928 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-09 00:38:12.928 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2020-07-09 00:38:12.937 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 8 ms
+2020-07-09 00:38:13.316 [INFO] [http-nio-8080-exec-1] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from holcas to pamcan.
+2020-07-09 00:38:46.110 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 4272 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:38:46.110 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:38:47.630 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:38:47.786 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 135ms. Found 1 JPA repository interfaces.
+2020-07-09 00:38:48.996 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:38:49.012 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:38:49.012 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:38:49.012 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:38:49.262 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:38:49.278 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3075 ms
+2020-07-09 00:38:49.827 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:38:49.921 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:38:50.009 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:38:50.119 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:38:50.397 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:38:50.641 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:38:51.155 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:38:51.218 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:38:52.772 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:38:52.783 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:38:53.479 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:38:53.532 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:38:53.560 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:38:54.024 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-09 00:38:54.035 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 8.96 seconds (JVM running for 9.983)
+2020-07-09 00:39:04.760 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-09 00:39:04.761 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2020-07-09 00:39:04.773 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 12 ms
+2020-07-09 00:40:07.354 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 4628 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:40:07.370 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:40:08.935 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:40:09.029 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 79ms. Found 1 JPA repository interfaces.
+2020-07-09 00:40:10.107 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:40:10.122 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:40:10.122 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:40:10.122 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:40:10.482 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:40:10.482 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3003 ms
+2020-07-09 00:40:10.885 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:40:10.968 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:40:11.030 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:40:11.145 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:40:11.495 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:40:11.695 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:40:12.133 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:40:12.195 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:40:13.748 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:40:13.763 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:40:14.503 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:40:14.542 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:40:14.547 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:40:14.851 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-09 00:40:14.865 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 8.514 seconds (JVM running for 9.525)
+2020-07-09 00:40:23.849 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-09 00:40:23.849 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2020-07-09 00:40:23.860 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 10 ms
+2020-07-09 00:40:50.692 [INFO] [http-nio-8080-exec-9] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from pamcan to holcas.
+2020-07-09 00:40:51.815 [INFO] [http-nio-8080-exec-1] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from holcas to kaldug.
+2020-07-09 00:40:52.766 [INFO] [http-nio-8080-exec-3] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from kaldug to pauell.
+2020-07-09 00:40:53.870 [INFO] [http-nio-8080-exec-5] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from pauell to natfea.
+2020-07-09 00:40:54.872 [INFO] [http-nio-8080-exec-7] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from natfea to pamcan.
