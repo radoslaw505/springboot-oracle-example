@@ -2,6 +2,8 @@ package com.binge.radoslaw.OracleJDBC.controller;
 
 import com.binge.radoslaw.OracleJDBC.model.Employee;
 import com.binge.radoslaw.OracleJDBC.repository.EmployeeRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +14,8 @@ import java.util.Date;
 @Controller // This means that this class is a Controller
 @RequestMapping(path="/operators") // This means URL's start with /demo (after Application path)
 public class EmployeeController {
+
+    Logger logger = LoggerFactory.getLogger(EmployeeController.class);
 
     @Autowired
     private EmployeeRepository employeeRepository;
@@ -37,6 +41,12 @@ public class EmployeeController {
 
         employeeAttachOnSite.setCurrentOn("On Site");
         employeeRepository.save(employeeAttachOnSite);
+
+        if (employeeDetachOnSite != null) {
+            logger.info("Operator On Site changed from " + employeeDetachOnSite.getLogin() + " to " + employeeAttachOnSite.getLogin() + ".");
+        } else {
+            logger.info("Operator On Site has been set to " + employeeAttachOnSite.getLogin() + ".");
+        }
 
         return "redirect:/operators";
     }
