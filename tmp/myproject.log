@@ -3183,3 +3183,45 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: employee is not 
 2020-07-09 00:40:52.766 [INFO] [http-nio-8080-exec-3] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from kaldug to pauell.
 2020-07-09 00:40:53.870 [INFO] [http-nio-8080-exec-5] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from pauell to natfea.
 2020-07-09 00:40:54.872 [INFO] [http-nio-8080-exec-7] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:46] Operator On Site changed from natfea to pamcan.
+2020-07-09 00:47:15.276 [WARN] [http-nio-8080-exec-4] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-07-09 00:47:38.899 [WARN] [http-nio-8080-exec-5] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-07-09 00:48:32.477 [WARN] [http-nio-8080-exec-6] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-07-09 00:55:48.478 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 17044 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-09 00:55:48.485 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-09 00:55:49.873 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-09 00:55:49.989 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 102ms. Found 1 JPA repository interfaces.
+2020-07-09 00:55:51.040 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2020-07-09 00:55:51.056 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:55:51.056 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-09 00:55:51.056 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-09 00:55:51.353 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-09 00:55:51.353 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 2738 ms
+2020-07-09 00:55:51.748 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-09 00:55:51.827 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-09 00:55:51.890 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-09 00:55:51.970 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-09 00:55:52.283 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-09 00:55:52.424 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-09 00:55:52.877 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-09 00:55:52.923 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-09 00:55:54.419 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-09 00:55:54.430 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-09 00:55:55.143 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-09 00:55:55.189 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-09 00:55:55.191 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-09 00:55:55.572 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-09 00:55:55.583 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 8.116 seconds (JVM running for 9.135)
+2020-07-09 00:56:02.182 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-09 00:56:02.183 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2020-07-09 00:56:02.197 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 14 ms
+2020-07-09 00:56:02.231 [INFO] [http-nio-8080-exec-1] [com.binge.radoslaw.OracleJDBC.controller.EmployeeApiController:85] Users list collected from RESTful controller.
+2020-07-09 00:56:40.051 [INFO] [http-nio-8080-exec-2] [com.binge.radoslaw.OracleJDBC.controller.EmployeeApiController:85] Users list collected from RESTful controller.
+2020-07-09 00:56:48.172 [INFO] [http-nio-8080-exec-3] [com.binge.radoslaw.OracleJDBC.controller.EmployeeApiController:73] On Site operator has been changed to: binmonfrom RESTful controller.
+2020-07-09 00:57:01.038 [INFO] [http-nio-8080-exec-4] [com.binge.radoslaw.OracleJDBC.controller.EmployeeApiController:52] Users list collected from RESTful controller.
+2020-07-09 00:59:02.030 [WARN] [http-nio-8080-exec-7] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'firstName' is not present]
+2020-07-09 00:59:39.948 [INFO] [http-nio-8080-exec-8] [org.apache.tomcat.util.http.Parameters:173] Character decoding failed. Parameter [login] with value [mondue%firstName=Mondeles] has been ignored. Note that the name and value quoted here may be corrupted due to the failed decoding. Use debug level logging to see the original, non-corrupted values.
+ Note: further occurrences of Parameter errors will be logged at DEBUG level.
+2020-07-09 00:59:39.950 [WARN] [http-nio-8080-exec-8] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'login' is not present]
+2020-07-09 00:59:50.535 [WARN] [http-nio-8080-exec-9] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'firstName' is not present]
+2020-07-09 00:59:59.024 [WARN] [http-nio-8080-exec-10] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'firstName' is not present]
+2020-07-09 01:00:25.045 [WARN] [http-nio-8080-exec-2] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'login' is not present]
