@@ -6,14 +6,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 @Controller
-@RequestMapping(path="/api")
+@RequestMapping(path = "/api")
 public class EmployeeApiController {
 
     // @Autowired means to get the bean called employeeService
@@ -27,12 +25,13 @@ public class EmployeeApiController {
     // @ResponseBody means the returned String is the response, not a view name
     // @RequestParam means it is a parameter from the GET or POST request
 
-    @PostMapping(path="/add") // Map ONLY POST Requests
+    @PostMapping(path = "/add") // Map ONLY POST Requests
     @ResponseStatus(code = HttpStatus.CREATED)
-    public @ResponseBody String addNewEmployee(
+    public @ResponseBody
+    String addNewEmployee(
             @RequestParam String login
-          , @RequestParam String firstName
-          , @RequestParam String lastName) {
+            , @RequestParam String firstName
+            , @RequestParam String lastName) {
 
         Employee newEmployee = new Employee();
 
@@ -46,17 +45,19 @@ public class EmployeeApiController {
     }
 
 
-    @GetMapping(path="/getAll")
-    public @ResponseBody Iterable<Employee> getAllUEmployees() {
+    @GetMapping(path = "/getAll")
+    public @ResponseBody
+    Iterable<Employee> getAllUEmployees() {
         // This returns a JSON or XML with the users
         logger.info("Users list collected from RESTful controller.");
         return employeeRepository.findAll();
     }
 
 
-    @PostMapping(path="/setOnSite")
-    public @ResponseBody String setOnSite(
-           @RequestParam String login) {
+    @PostMapping(path = "/setOnSite")
+    public @ResponseBody
+    String setOnSite(
+            @RequestParam String login) {
 
         try {
             Employee employeeDetachOnSite = employeeRepository.findByCurrentOn("On Site");
@@ -80,9 +81,18 @@ public class EmployeeApiController {
         }
     }
 
-    @GetMapping(path="/getOnSite")
-    public @ResponseBody Employee getOnSite() {
+    @GetMapping(path = "/getOnSite")
+    public @ResponseBody
+    Employee getOnSite() {
         logger.info("OnSite operator checked from RESTful controller.");
         return employeeRepository.findByCurrentOn("On Site");
     }
+
+    @GetMapping(path = "/get/{login}")
+    public @ResponseBody
+    String getUser(@PathVariable String login) {
+        Employee operator = employeeRepository.findByLogin(login);
+        return operator.getLastName();
+    }
+
 }

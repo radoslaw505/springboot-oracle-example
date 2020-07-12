@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @Controller // This means that this class is a Controller
-@RequestMapping(path="/operators") // This means URL's start with /demo (after Application path)
+@RequestMapping(path = "/operators") // This means URL's start with /demo (after Application path)
 public class EmployeeController {
 
     Logger logger = LoggerFactory.getLogger(EmployeeController.class);
@@ -21,13 +21,19 @@ public class EmployeeController {
 
 
     @GetMapping("")
-    public String showAllUEmployees(Model model) {
+    public String showAllOperators(Model model) {
+        model.addAttribute("employees", employeeRepository.findAllByCurrentOn("On Site"));
+        return "home";
+    }
+
+    @GetMapping("/all")
+    public String showAllEmployees(Model model) {
         model.addAttribute("employees", employeeRepository.findAllByOrderByLastNameAscFirstNameAsc());
         return "employee";
     }
 
 
-    @PostMapping(path="/setOnSite")
+    @PostMapping(path = "/setOnSite")
     public String setOnSite(@RequestParam String login) {
 
         Employee employeeDetachOnSite = employeeRepository.findByCurrentOn("On Site");

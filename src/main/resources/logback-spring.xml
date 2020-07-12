@@ -30,13 +30,13 @@
     </appender>
 
 
-    <logger name="org.springframework" level="INFO" />
-    <logger name="com.binge.radoslaw.OracleJDBC" level="INFO" />
-    <logger name="org.hibernate" level="INFO" />
+    <logger name="org.springframework" level="INFO"/>
+    <logger name="com.binge.radoslaw.OracleJDBC" level="INFO"/>
+    <logger name="org.hibernate" level="INFO"/>
 
     <root level="INFO">
-        <appender-ref ref="STDOUT" />
-        <appender-ref ref="FILE" />
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
     </root>
 
 </configuration>
