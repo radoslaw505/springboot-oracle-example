@@ -53,7 +53,7 @@ public class EmployeeController {
             logger.info("Operator On Site has been set to " + employeeAttachOnSite.getLogin() + ".");
         }
 
-        return "redirect:/operators";
+        return "redirect:/operators/all";
     }
 
 }
