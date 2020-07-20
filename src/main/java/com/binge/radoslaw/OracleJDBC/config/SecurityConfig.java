@@ -18,23 +18,31 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
-                .withUser("admin").password(passwordEncoder().encode("admin")).roles("ADMIN")
+                .withUser("admin")
+                    .password(passwordEncoder().encode("admin"))
+                    .roles("ADMIN")
                 .and()
-                .withUser("radoslaw").password(passwordEncoder().encode("test123")).roles("USER");
+                .withUser("radoslaw")
+                    .password(passwordEncoder().encode("test123"))
+                    .roles("USER");
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
+                .antMatchers("/").permitAll()
+                .antMatchers("/operators/**").authenticated()
+                .antMatchers("/api/**").authenticated()
 //                .antMatchers( "/login*", "/js/**", "/css/**").permitAll()
-                .anyRequest().authenticated()
+//                .anyRequest().authenticated()
                 .and()
 //                .formLogin()
 //                .loginPage("/login").permitAll()
 //                .defaultSuccessUrl("/operators", true)
 //                .failureForwardUrl("/login?error");
-                .httpBasic();
+                .httpBasic()
+        ;
     }
 
     @Bean
