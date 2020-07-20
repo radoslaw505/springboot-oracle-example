@@ -24,20 +24,20 @@
   });
 
 	// Form Submission
-//  $("#login-form").submit(function() {
-//  	remove_loading($(this));
+  $("#login-form").submit(function() {
+  	remove_loading($(this));
 
-//		if(options['useAJAX'] == true)
-//		{
+		if(options['useAJAX'] == true)
+		{
 			// Dummy AJAX request (Replace this with your AJAX code)
 		  // If you don't want to use AJAX, remove this
-//  	  dummy_submit_form($(this));
+  	  dummy_submit_form($(this));
 
 		  // Cancel the normal submission.
 		  // If you don't want to use AJAX, remove this
-//  	  return false;
-//		}
-//  }
+  	  return false;
+		}
+  }
   );
 
 })(jQuery);

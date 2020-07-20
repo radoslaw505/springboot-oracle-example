@@ -1,6 +1,5 @@
 package com.binge.radoslaw.OracleJDBC.config;
 
-import org.apache.tomcat.util.buf.UEncoder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -24,7 +23,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .withUser("radoslaw")
                     .password(passwordEncoder().encode("test123"))
-                    .roles("USER");
+                    .roles("USER")
+        ;
     }
 
     @Override
@@ -34,14 +34,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
                 .antMatchers("/operators/**").authenticated()
                 .antMatchers("/api/**").authenticated()
-//                .antMatchers( "/login*", "/js/**", "/css/**").permitAll()
-//                .anyRequest().authenticated()
+                .antMatchers( "/login*", "/js/**", "/css/**").permitAll()
                 .and()
-//                .formLogin()
-//                .loginPage("/login").permitAll()
-//                .defaultSuccessUrl("/operators", true)
-//                .failureForwardUrl("/login?error");
-                .httpBasic()
+                .formLogin()
+                .loginPage("/login").permitAll()
         ;
     }
 
