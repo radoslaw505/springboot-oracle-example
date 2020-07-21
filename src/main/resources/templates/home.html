@@ -26,13 +26,12 @@
                     <a class="nav-item nav-link" href="/operators/all">Set OnSite</a>
                     <a class="nav-item nav-link" href="#">About</a>
                 </div>
-
                 <!-- Navbar Right Side -->
                 <div class="navbar-nav">
                     <div sec:authorize="isAuthenticated()">
-                            <form method="POST" th:action="@{/logout}">
-                                <button type="submit" class="btn btn-dark">Logout</button>
-                            </form>
+                        <form method="POST" th:action="@{/logout}">
+                            <button type="submit" class="btn btn-dark">Logout</button>
+                        </form>
                     </div>
                     <div sec:authorize="isAnonymous()">
                         <form action="/login">
