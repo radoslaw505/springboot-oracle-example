@@ -27,8 +27,16 @@
 
                 <!-- Navbar Right Side -->
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="/login">Login</a>
-                    <a class="nav-item nav-link" href="#">Register</a>
+                    <div sec:authorize="isAuthenticated()">
+                            <form method="POST" th:action="@{/logout}">
+                                <button type="submit" class="btn btn-dark">Logout</button>
+                            </form>
+                    </div>
+                    <div sec:authorize="isAnonymous()">
+                        <form action="/login">
+                            <button type="submit" class="btn btn-dark">Login</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,698 +1,159 @@
-2020-07-20 19:32:33.501 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 12592 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 19:32:33.528 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 19:32:35.999 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 19:32:36.178 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 157ms. Found 1 JPA repository interfaces.
-2020-07-20 19:32:37.730 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2020-07-20 19:32:37.759 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:32:37.760 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 19:32:37.761 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 19:32:38.214 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 19:32:38.215 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4540 ms
-2020-07-20 19:32:39.123 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 19:32:39.309 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 19:32:39.606 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 19:32:39.772 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 19:32:40.421 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 19:32:40.745 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 19:32:40.898 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@357bc488, org.springframework.security.web.context.SecurityContextPersistenceFilter@64b0d1fa, org.springframework.security.web.header.HeaderWriterFilter@20801cbb, org.springframework.security.web.csrf.CsrfFilter@cde8c6c, org.springframework.security.web.authentication.logout.LogoutFilter@7b5cc918, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6367a688, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12d2ddde, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@577536e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ea17147, org.springframework.security.web.session.SessionManagementFilter@3e546734, org.springframework.security.web.access.ExceptionTranslationFilter@193bb809, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7069f076]
-2020-07-20 19:32:41.651 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 19:32:41.748 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 19:32:45.356 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 19:32:45.370 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 19:32:46.356 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:32:46.459 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
-2020-07-20 19:32:46.462 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 19:32:47.025 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 19:32:47.043 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 15.482 seconds (JVM running for 18.363)
-2020-07-20 19:32:57.967 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 19:32:57.968 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 19:32:57.988 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 20 ms
-2020-07-20 19:37:09.144 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 7752 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 19:37:09.155 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 19:37:11.278 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 19:37:11.457 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 156ms. Found 1 JPA repository interfaces.
-2020-07-20 19:37:13.081 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2020-07-20 19:37:13.109 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:37:13.111 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 19:37:13.111 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 19:37:13.473 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 19:37:13.474 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4171 ms
-2020-07-20 19:37:14.253 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 19:37:14.399 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 19:37:14.515 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 19:37:14.615 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 19:37:15.157 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 19:37:15.417 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 19:37:15.489 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a1f2a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e22368c, org.springframework.security.web.header.HeaderWriterFilter@1859ffda, org.springframework.security.web.csrf.CsrfFilter@581b1c08, org.springframework.security.web.authentication.logout.LogoutFilter@6c8fe7a4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f73ce28, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c770db4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2213639b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40ce9049, org.springframework.security.web.session.SessionManagementFilter@4bc6da03, org.springframework.security.web.access.ExceptionTranslationFilter@e9474f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b321262]
-2020-07-20 19:37:16.236 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 19:37:16.309 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 19:37:19.337 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 19:37:19.355 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 19:37:20.572 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:37:20.783 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
-2020-07-20 19:37:20.786 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 19:37:21.837 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 19:37:21.899 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 14.066 seconds (JVM running for 15.36)
-2020-07-20 19:37:34.749 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 7440 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 19:37:34.764 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 19:37:36.854 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 19:37:37.018 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 144ms. Found 1 JPA repository interfaces.
-2020-07-20 19:37:38.505 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2020-07-20 19:37:38.540 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:37:38.543 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 19:37:38.544 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 19:37:38.881 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 19:37:38.882 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3982 ms
-2020-07-20 19:37:39.512 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 19:37:39.621 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 19:37:39.715 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 19:37:39.842 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 19:37:40.359 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 19:37:40.722 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 19:37:40.738 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f2b90fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b5cc918, org.springframework.security.web.header.HeaderWriterFilter@4e22368c, org.springframework.security.web.csrf.CsrfFilter@f2276c9, org.springframework.security.web.authentication.logout.LogoutFilter@552cede7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@160b4809, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@202898d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50b93353, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bb41f5c, org.springframework.security.web.session.SessionManagementFilter@6f25bf88, org.springframework.security.web.access.ExceptionTranslationFilter@4bc6da03, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bb25753]
-2020-07-20 19:37:41.532 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 19:37:41.612 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 19:37:44.185 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 19:37:44.199 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 19:37:45.421 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:37:45.579 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
-2020-07-20 19:37:45.586 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 19:37:46.005 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 19:37:46.023 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 12.469 seconds (JVM running for 13.693)
-2020-07-20 19:38:13.576 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 19:38:13.580 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 19:38:13.600 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 18 ms
-2020-07-20 19:40:52.250 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 1676 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 19:40:52.259 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 19:40:54.744 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 19:40:54.955 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 190ms. Found 1 JPA repository interfaces.
-2020-07-20 19:40:56.469 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2020-07-20 19:40:56.493 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:40:56.495 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 19:40:56.496 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 19:40:56.877 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 19:40:56.878 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4485 ms
-2020-07-20 19:40:57.489 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 19:40:57.618 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 19:40:57.696 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 19:40:57.833 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 19:40:58.383 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 19:40:58.665 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 19:40:58.769 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ba90d8a, org.springframework.security.web.context.SecurityContextPersistenceFilter@f2276c9, org.springframework.security.web.header.HeaderWriterFilter@581b1c08, org.springframework.security.web.csrf.CsrfFilter@174721c4, org.springframework.security.web.authentication.logout.LogoutFilter@62b3a2f6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@35bfa1bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62b475e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12219f6a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@309dcdf3, org.springframework.security.web.session.SessionManagementFilter@53747c4a, org.springframework.security.web.access.ExceptionTranslationFilter@64b018f3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@202d9236]
-2020-07-20 19:40:59.542 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 19:40:59.603 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 19:41:01.575 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 19:41:01.586 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 19:41:02.542 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:41:02.636 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
-2020-07-20 19:41:02.639 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 19:41:03.085 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 19:41:03.101 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 12.344 seconds (JVM running for 14.606)
-2020-07-20 19:41:12.786 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 19:41:12.787 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 19:41:12.800 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 12 ms
-2020-07-20 19:42:23.301 [INFO] [http-nio-8080-exec-10] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:51] Operator On Site changed from firlas to holcas.
-2020-07-20 19:47:04.656 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 12376 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 19:47:04.663 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 19:47:06.763 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 19:47:06.918 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 138ms. Found 1 JPA repository interfaces.
-2020-07-20 19:47:08.166 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2020-07-20 19:47:08.187 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:47:08.189 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 19:47:08.190 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 19:47:08.495 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 19:47:08.495 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3728 ms
-2020-07-20 19:47:08.993 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 19:47:09.126 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 19:47:09.257 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 19:47:09.428 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 19:47:09.869 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 19:47:10.110 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 19:47:10.278 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@114a5e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@c8f97a7, org.springframework.security.web.header.HeaderWriterFilter@62a54948, org.springframework.security.web.csrf.CsrfFilter@3e046e39, org.springframework.security.web.authentication.logout.LogoutFilter@40ed1802, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@697d6ded, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3249e278, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ad99cf3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f281aaf, org.springframework.security.web.session.SessionManagementFilter@50b93353, org.springframework.security.web.access.ExceptionTranslationFilter@37a0ec3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d615b2e]
-2020-07-20 19:47:11.412 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 19:47:11.917 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 19:47:14.082 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 19:47:14.095 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 19:47:15.078 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:47:15.143 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
-2020-07-20 19:47:15.147 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 19:47:15.556 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 19:47:15.568 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 12.271 seconds (JVM running for 13.56)
-2020-07-20 19:47:19.532 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 19:47:19.532 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 19:47:19.546 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 13 ms
-2020-07-20 19:49:31.266 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 19300 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 19:49:31.274 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 19:49:34.664 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 19:49:34.851 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 164ms. Found 1 JPA repository interfaces.
-2020-07-20 19:49:36.820 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2020-07-20 19:49:36.850 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:49:36.852 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 19:49:36.853 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 19:49:37.307 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 19:49:37.308 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 5789 ms
-2020-07-20 19:49:38.122 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 19:49:38.340 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 19:49:38.535 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 19:49:38.592 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 19:49:39.287 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 19:49:39.626 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 19:49:39.658 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@149b4d20, org.springframework.security.web.context.SecurityContextPersistenceFilter@5382184b, org.springframework.security.web.header.HeaderWriterFilter@1376883, org.springframework.security.web.csrf.CsrfFilter@7e8279e5, org.springframework.security.web.authentication.logout.LogoutFilter@235c997d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@40ce9049, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2213639b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c719bd4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@664e848c, org.springframework.security.web.session.SessionManagementFilter@4262fdeb, org.springframework.security.web.access.ExceptionTranslationFilter@52d3fafd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7573b9ee]
-2020-07-20 19:49:40.509 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 19:49:40.605 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 19:49:43.432 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 19:49:43.461 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 19:49:45.632 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:49:45.865 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
-2020-07-20 19:49:45.870 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 19:49:47.186 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 19:49:47.232 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 17.491 seconds (JVM running for 19.353)
-2020-07-20 19:50:04.821 [INFO] [http-nio-8080-exec-2] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 19:50:04.828 [INFO] [http-nio-8080-exec-2] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 19:50:04.855 [INFO] [http-nio-8080-exec-2] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 26 ms
-2020-07-20 19:50:19.772 [INFO] [http-nio-8080-exec-3] [com.binge.radoslaw.OracleJDBC.controller.EmployeeApiController:52] Users list collected from RESTful controller.
-2020-07-20 19:51:36.732 [INFO] [http-nio-8080-exec-8] [com.binge.radoslaw.OracleJDBC.controller.EmployeeApiController:52] Users list collected from RESTful controller.
-2020-07-20 19:52:04.773 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 6260 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 19:52:04.781 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 19:52:06.308 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 19:52:06.488 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 152ms. Found 1 JPA repository interfaces.
-2020-07-20 19:52:07.764 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2020-07-20 19:52:07.789 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:52:07.791 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 19:52:07.791 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 19:52:08.086 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 19:52:08.087 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3169 ms
-2020-07-20 19:52:08.590 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 19:52:08.687 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 19:52:08.783 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 19:52:08.867 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 19:52:09.278 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 19:52:09.604 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 19:52:09.611 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@160b4809, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f0a2638, org.springframework.security.web.header.HeaderWriterFilter@7f0b93b4, org.springframework.security.web.csrf.CsrfFilter@69cd7630, org.springframework.security.web.authentication.logout.LogoutFilter@5a08b084, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3a1f2a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77cb452c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@317890ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@149b4d20, org.springframework.security.web.session.SessionManagementFilter@46fc522d, org.springframework.security.web.access.ExceptionTranslationFilter@12219f6a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@309dcdf3]
-2020-07-20 19:52:10.124 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 19:52:10.193 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 19:52:11.938 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 19:52:11.956 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 19:52:12.787 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:52:12.857 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
-2020-07-20 19:52:12.861 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 19:52:13.244 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 19:52:13.257 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 9.579 seconds (JVM running for 10.731)
-2020-07-20 19:52:33.851 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 19:52:33.852 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 19:52:33.865 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 13 ms
-2020-07-20 19:52:33.915 [INFO] [http-nio-8080-exec-1] [com.binge.radoslaw.OracleJDBC.controller.EmployeeApiController:52] Users list collected from RESTful controller.
-2020-07-20 19:53:03.148 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 18452 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 19:53:03.159 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 19:53:05.263 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 19:53:05.427 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 144ms. Found 1 JPA repository interfaces.
-2020-07-20 19:53:06.783 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2020-07-20 19:53:06.805 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:53:06.807 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 19:53:06.807 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 19:53:07.200 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 19:53:07.201 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3908 ms
-2020-07-20 19:53:07.692 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 19:53:07.835 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 19:53:07.989 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 19:53:08.075 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 19:53:08.610 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 19:53:08.802 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 19:53:09.063 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13803a94, org.springframework.security.web.context.SecurityContextPersistenceFilter@75d366c2, org.springframework.security.web.header.HeaderWriterFilter@317890ea, org.springframework.security.web.csrf.CsrfFilter@4bc6da03, org.springframework.security.web.authentication.logout.LogoutFilter@50110971, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@420a8042, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5232e3f1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a08b084, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b4732dc, org.springframework.security.web.session.SessionManagementFilter@35adf623, org.springframework.security.web.access.ExceptionTranslationFilter@62b3a2f6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5efeb117]
-2020-07-20 19:53:09.624 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 19:53:09.708 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 19:53:12.348 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 19:53:12.360 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 19:53:13.221 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 19:53:13.347 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
-2020-07-20 19:53:13.348 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 19:53:13.822 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 19:53:13.835 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 12.054 seconds (JVM running for 13.507)
-2020-07-20 19:53:19.853 [INFO] [http-nio-8080-exec-2] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 19:53:19.854 [INFO] [http-nio-8080-exec-2] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 19:53:19.867 [INFO] [http-nio-8080-exec-2] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 11 ms
-2020-07-20 19:54:02.038 [INFO] [http-nio-8080-exec-3] [com.binge.radoslaw.OracleJDBC.controller.EmployeeApiController:52] Users list collected from RESTful controller.
-2020-07-20 20:12:40.300 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 9360 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 20:12:40.307 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 20:12:43.170 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 20:12:43.351 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 157ms. Found 1 JPA repository interfaces.
-2020-07-20 20:12:45.175 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2020-07-20 20:12:45.196 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 20:12:45.198 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 20:12:45.199 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 20:12:45.635 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 20:12:45.637 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 5174 ms
-2020-07-20 20:12:46.705 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 20:12:46.929 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 20:12:47.061 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 20:12:47.297 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 20:12:48.054 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 20:12:48.522 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f281aaf, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f25bf88, org.springframework.security.web.header.HeaderWriterFilter@4bc6da03, org.springframework.security.web.csrf.CsrfFilter@53747c4a, org.springframework.security.web.authentication.logout.LogoutFilter@5c6a5192, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5d05f453, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b5cc918, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62a54948, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d508d22, org.springframework.security.web.session.SessionManagementFilter@2213639b, org.springframework.security.web.access.ExceptionTranslationFilter@523a7801, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c0c4c0a]
-2020-07-20 20:12:48.685 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 20:12:49.539 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 20:12:49.640 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 20:12:52.131 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 20:12:52.150 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 20:12:53.899 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 20:12:53.973 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
-2020-07-20 20:12:53.982 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 20:12:54.668 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 20:12:54.686 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 15.919 seconds (JVM running for 17.538)
-2020-07-20 20:13:22.400 [INFO] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 20:13:22.401 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 20:13:22.419 [INFO] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 17 ms
-2020-07-20 20:22:31.557 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 11616 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 20:22:31.564 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 20:22:33.631 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 20:22:33.829 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 177ms. Found 1 JPA repository interfaces.
-2020-07-20 20:22:35.244 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (https)
-2020-07-20 20:22:35.266 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8080"]
-2020-07-20 20:22:35.267 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 20:22:35.268 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 20:22:35.681 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 20:22:35.683 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3975 ms
-2020-07-20 20:22:36.224 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 20:22:36.351 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 20:22:36.418 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 20:22:36.544 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 20:22:37.140 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 20:22:37.418 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 20:22:37.569 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ba90d8a, org.springframework.security.web.context.SecurityContextPersistenceFilter@f2276c9, org.springframework.security.web.header.HeaderWriterFilter@581b1c08, org.springframework.security.web.csrf.CsrfFilter@174721c4, org.springframework.security.web.authentication.logout.LogoutFilter@62b3a2f6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@35bfa1bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62b475e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12219f6a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@309dcdf3, org.springframework.security.web.session.SessionManagementFilter@53747c4a, org.springframework.security.web.access.ExceptionTranslationFilter@64b018f3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@202d9236]
-2020-07-20 20:22:38.306 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 20:22:38.370 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 20:22:40.305 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 20:22:40.319 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 20:22:41.274 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8080"]
-2020-07-20 20:22:42.212 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (https) with context path ''
-2020-07-20 20:22:42.220 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 20:22:42.706 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 20:22:42.744 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 12.495 seconds (JVM running for 13.756)
-2020-07-20 20:33:46.753 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 11644 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 20:33:46.764 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 20:33:48.789 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 20:33:49.041 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 232ms. Found 1 JPA repository interfaces.
-2020-07-20 20:33:50.606 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 20:33:50.625 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 20:33:50.627 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 20:33:50.647 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 20:33:50.648 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 20:33:50.989 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 20:33:50.990 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4087 ms
-2020-07-20 20:33:51.574 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 20:33:51.730 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 20:33:51.747 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 20:33:51.927 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 20:33:52.413 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 20:33:52.703 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 20:33:52.765 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32a4ecbe, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d0100ea, org.springframework.security.web.header.HeaderWriterFilter@7ecda95b, org.springframework.security.web.csrf.CsrfFilter@7a2fce12, org.springframework.security.web.authentication.logout.LogoutFilter@114a5e0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1e3f0aea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ea17147, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c0c4c0a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e71240b, org.springframework.security.web.session.SessionManagementFilter@6b321262, org.springframework.security.web.access.ExceptionTranslationFilter@519c6fcc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@796d33eb]
-2020-07-20 20:33:53.552 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 20:33:53.623 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 20:33:55.753 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 20:33:55.766 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 20:33:56.649 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 20:33:57.470 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 20:33:57.488 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 20:33:57.493 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 20:33:57.865 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 20:33:57.884 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 12.524 seconds (JVM running for 14.13)
-2020-07-20 20:34:13.104 [INFO] [https-jsse-nio-8443-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 20:34:13.104 [INFO] [https-jsse-nio-8443-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 20:34:13.119 [INFO] [https-jsse-nio-8443-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 12 ms
-2020-07-20 20:39:26.716 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 1396 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 20:39:26.729 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 20:39:29.235 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 20:39:29.413 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 151ms. Found 1 JPA repository interfaces.
-2020-07-20 20:39:31.216 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 20:39:31.231 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 20:39:31.232 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 20:39:31.251 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 20:39:31.252 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 20:39:31.614 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 20:39:31.615 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4709 ms
-2020-07-20 20:39:32.268 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 20:39:32.419 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 20:39:32.485 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 20:39:32.616 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 20:39:33.119 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 20:39:33.411 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 20:39:33.495 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5df7e31b, org.springframework.security.web.context.SecurityContextPersistenceFilter@9a20cbd, org.springframework.security.web.header.HeaderWriterFilter@77b3752b, org.springframework.security.web.csrf.CsrfFilter@41bfa9e9, org.springframework.security.web.authentication.logout.LogoutFilter@2ed9f6f8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@32a4ecbe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@445821a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@611b35d6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63a9c661, org.springframework.security.web.session.SessionManagementFilter@309dcdf3, org.springframework.security.web.access.ExceptionTranslationFilter@11787b64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e8b357d]
-2020-07-20 20:39:34.346 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 20:39:34.446 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 20:39:37.226 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 20:39:37.239 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 20:39:38.480 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 20:39:39.953 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 20:39:39.998 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 20:39:40.008 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 20:39:40.599 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 20:39:40.614 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 15.513 seconds (JVM running for 16.902)
-2020-07-20 20:39:49.330 [INFO] [https-jsse-nio-8443-exec-3] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 20:39:49.331 [INFO] [https-jsse-nio-8443-exec-3] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 20:39:49.345 [INFO] [https-jsse-nio-8443-exec-3] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 13 ms
-2020-07-20 20:40:52.264 [INFO] [https-jsse-nio-8443-exec-6] [com.binge.radoslaw.OracleJDBC.controller.EmployeeController:51] Operator On Site changed from holcas to kaldug.
-2020-07-20 20:41:34.073 [INFO] [https-jsse-nio-8443-exec-10] [com.binge.radoslaw.OracleJDBC.controller.EmployeeApiController:52] Users list collected from RESTful controller.
-2020-07-20 20:41:38.188 [INFO] [https-jsse-nio-8443-exec-8] [com.binge.radoslaw.OracleJDBC.controller.EmployeeApiController:52] Users list collected from RESTful controller.
-2020-07-20 20:41:55.070 [INFO] [https-jsse-nio-8443-exec-7] [com.binge.radoslaw.OracleJDBC.controller.EmployeeApiController:52] Users list collected from RESTful controller.
-2020-07-20 22:38:53.059 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 2348 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 22:38:53.077 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 22:38:55.109 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 22:38:55.289 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 157ms. Found 1 JPA repository interfaces.
-2020-07-20 22:38:56.867 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 22:38:56.888 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:38:56.890 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:38:56.915 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 22:38:56.916 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 22:38:57.273 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 22:38:57.273 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4037 ms
-2020-07-20 22:38:57.867 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 22:38:58.001 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 22:38:58.091 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 22:38:58.225 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 22:38:59.100 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 22:38:59.791 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 22:38:59.811 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39b626e5, org.springframework.security.web.context.SecurityContextPersistenceFilter@68b11545, org.springframework.security.web.header.HeaderWriterFilter@6ad1701a, org.springframework.security.web.csrf.CsrfFilter@2dafae61, org.springframework.security.web.authentication.logout.LogoutFilter@4d93f75b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@8054fe2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@357bc488, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@445821a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32a4ecbe, org.springframework.security.web.session.SessionManagementFilter@35bfa1bb, org.springframework.security.web.access.ExceptionTranslationFilter@f5a7226, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@902fdbe]
-2020-07-20 22:39:00.594 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 22:39:00.671 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 22:39:02.886 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 22:39:02.904 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 22:39:03.852 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:39:04.915 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:39:04.931 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 22:39:04.935 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 22:39:05.393 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 22:39:05.413 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 13.635 seconds (JVM running for 15.437)
-2020-07-20 22:39:25.559 [INFO] [https-jsse-nio-8443-exec-8] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 22:39:25.560 [INFO] [https-jsse-nio-8443-exec-8] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 22:39:25.579 [INFO] [https-jsse-nio-8443-exec-8] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 19 ms
-2020-07-20 22:39:41.046 [WARN] [https-jsse-nio-8443-exec-1] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2020-07-20 22:40:27.524 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 3432 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 22:40:27.532 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 22:40:29.659 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 22:40:29.851 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 173ms. Found 1 JPA repository interfaces.
-2020-07-20 22:40:31.379 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 22:40:31.399 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:40:31.401 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:40:31.426 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 22:40:31.427 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 22:40:31.732 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 22:40:31.733 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4079 ms
-2020-07-20 22:40:32.333 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 22:40:32.481 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 22:40:32.596 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 22:40:32.794 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 22:40:33.334 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 22:40:33.597 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 22:40:33.683 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bb9ca38, org.springframework.security.web.context.SecurityContextPersistenceFilter@35d26ad2, org.springframework.security.web.header.HeaderWriterFilter@35bfa1bb, org.springframework.security.web.csrf.CsrfFilter@764b14b8, org.springframework.security.web.authentication.logout.LogoutFilter@182e7eda, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3e900e1a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ee21292, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@dd3f8aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@160e99e0, org.springframework.security.web.session.SessionManagementFilter@445821a6, org.springframework.security.web.access.ExceptionTranslationFilter@319642db, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6af5b246]
-2020-07-20 22:40:34.335 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 22:40:34.403 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 22:40:36.542 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 22:40:36.555 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 22:40:37.541 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:40:38.745 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:40:38.761 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 22:40:38.765 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 22:40:39.251 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 22:40:39.266 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 13.019 seconds (JVM running for 14.553)
-2020-07-20 22:40:45.867 [INFO] [https-jsse-nio-8443-exec-8] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 22:40:45.867 [INFO] [https-jsse-nio-8443-exec-8] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 22:40:45.881 [INFO] [https-jsse-nio-8443-exec-8] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 13 ms
-2020-07-20 22:40:57.432 [WARN] [https-jsse-nio-8443-exec-10] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:199] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2020-07-20 22:47:19.768 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 17320 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 22:47:19.773 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 22:47:21.754 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 22:47:21.914 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 141ms. Found 1 JPA repository interfaces.
-2020-07-20 22:47:23.473 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 22:47:23.496 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:47:23.498 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:47:23.529 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 22:47:23.531 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 22:47:23.932 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 22:47:23.933 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4040 ms
-2020-07-20 22:47:24.683 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 22:47:24.927 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 22:47:25.042 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 22:47:25.227 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 22:47:25.733 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 22:47:26.016 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 22:47:26.198 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f9b7fe1, org.springframework.security.web.context.SecurityContextPersistenceFilter@68b11545, org.springframework.security.web.header.HeaderWriterFilter@319642db, org.springframework.security.web.csrf.CsrfFilter@7069f076, org.springframework.security.web.authentication.logout.LogoutFilter@52ca2652, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7dee835, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@357bc488, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@445821a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f79f192, org.springframework.security.web.session.SessionManagementFilter@35bfa1bb, org.springframework.security.web.access.ExceptionTranslationFilter@77b3752b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28cd2c2]
-2020-07-20 22:47:26.855 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 22:47:26.940 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 22:47:28.942 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 22:47:28.956 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 22:47:29.930 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:47:30.862 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:47:30.879 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 22:47:30.882 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 22:47:31.329 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 22:47:31.339 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 13.002 seconds (JVM running for 14.321)
-2020-07-20 22:47:41.243 [INFO] [https-jsse-nio-8443-exec-9] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 22:47:41.244 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 22:47:41.261 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 16 ms
-2020-07-20 22:48:37.371 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 12256 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 22:48:37.377 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 22:48:39.195 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 22:48:39.360 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 146ms. Found 1 JPA repository interfaces.
-2020-07-20 22:48:40.558 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 22:48:40.584 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:48:40.586 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:48:40.605 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 22:48:40.606 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 22:48:40.977 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 22:48:40.977 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3460 ms
-2020-07-20 22:48:41.428 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 22:48:41.557 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 22:48:41.563 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 22:48:41.698 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 22:48:42.111 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 22:48:42.344 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 22:48:42.355 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43471a7e, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d93f75b, org.springframework.security.web.header.HeaderWriterFilter@5efeb117, org.springframework.security.web.csrf.CsrfFilter@2c0c4c0a, org.springframework.security.web.authentication.logout.LogoutFilter@1ad9b8d3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63a9c661, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f281aaf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35650279, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21e45a6f, org.springframework.security.web.session.SessionManagementFilter@149b4d20, org.springframework.security.web.access.ExceptionTranslationFilter@697d6ded, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b44d6d0]
-2020-07-20 22:48:43.041 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 22:48:43.092 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 22:48:44.741 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 22:48:44.755 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 22:48:45.684 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:48:46.387 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:48:46.399 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 22:48:46.401 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 22:48:46.699 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 22:48:46.710 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 10.573 seconds (JVM running for 11.745)
-2020-07-20 22:48:53.419 [INFO] [https-jsse-nio-8443-exec-9] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 22:48:53.420 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 22:48:53.435 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 15 ms
-2020-07-20 22:49:51.230 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 1900 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 22:49:51.237 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 22:49:52.924 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 22:49:53.070 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 127ms. Found 1 JPA repository interfaces.
-2020-07-20 22:49:54.296 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 22:49:54.313 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:49:54.316 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:49:54.339 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 22:49:54.341 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 22:49:54.657 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 22:49:54.657 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3296 ms
-2020-07-20 22:49:55.094 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 22:49:55.189 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 22:49:55.272 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 22:49:55.328 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 22:49:55.783 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 22:49:56.016 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 22:49:56.104 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@515b9d4a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f73ce28, org.springframework.security.web.header.HeaderWriterFilter@bb25753, org.springframework.security.web.csrf.CsrfFilter@77b3752b, org.springframework.security.web.authentication.logout.LogoutFilter@251c4280, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a85644c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2282400e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65c5bf0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39b626e5, org.springframework.security.web.session.SessionManagementFilter@40c06358, org.springframework.security.web.access.ExceptionTranslationFilter@2c0c4c0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6af5b246]
-2020-07-20 22:49:56.655 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 22:49:56.723 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 22:49:58.469 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 22:49:58.481 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 22:49:59.235 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:50:00.241 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:50:00.253 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 22:50:00.255 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 22:50:00.687 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 22:50:00.704 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 10.626 seconds (JVM running for 11.799)
-2020-07-20 22:50:04.904 [INFO] [https-jsse-nio-8443-exec-9] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 22:50:04.905 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 22:50:04.919 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 14 ms
-2020-07-20 22:51:29.954 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 15496 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 22:51:29.962 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 22:51:31.684 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 22:51:31.833 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 131ms. Found 1 JPA repository interfaces.
-2020-07-20 22:51:33.078 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 22:51:33.095 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:51:33.097 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:51:33.118 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 22:51:33.119 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 22:51:33.471 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 22:51:33.472 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3389 ms
-2020-07-20 22:51:33.893 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 22:51:34.017 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 22:51:34.111 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 22:51:34.170 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 22:51:34.585 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 22:51:34.778 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 22:51:34.958 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a38f122, org.springframework.security.web.context.SecurityContextPersistenceFilter@251c4280, org.springframework.security.web.header.HeaderWriterFilter@2bb41f5c, org.springframework.security.web.csrf.CsrfFilter@543d5863, org.springframework.security.web.authentication.logout.LogoutFilter@58833798, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a1ccaaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79a13920, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3dce6dd8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ce03e86, org.springframework.security.web.session.SessionManagementFilter@7da635c0, org.springframework.security.web.access.ExceptionTranslationFilter@5d508d22, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@160e99e0]
-2020-07-20 22:51:35.467 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 22:51:35.523 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 22:51:37.300 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 22:51:37.317 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 22:51:38.163 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:51:39.035 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:51:39.058 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 22:51:39.063 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 22:51:39.551 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 22:51:39.582 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 10.668 seconds (JVM running for 11.876)
-2020-07-20 22:51:43.396 [INFO] [https-jsse-nio-8443-exec-9] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 22:51:43.397 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 22:51:43.409 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 11 ms
-2020-07-20 22:52:37.628 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 13932 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 22:52:37.637 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 22:52:39.260 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 22:52:39.385 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 109ms. Found 1 JPA repository interfaces.
-2020-07-20 22:52:40.603 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 22:52:40.626 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:52:40.628 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:52:40.648 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 22:52:40.650 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 22:52:40.916 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 22:52:40.918 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3165 ms
-2020-07-20 22:52:41.545 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 22:52:41.747 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 22:52:41.847 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 22:52:41.901 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 22:52:42.477 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 22:52:42.732 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 22:52:42.791 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f9b7fe1, org.springframework.security.web.context.SecurityContextPersistenceFilter@59498d94, org.springframework.security.web.header.HeaderWriterFilter@5707f613, org.springframework.security.web.csrf.CsrfFilter@3421debd, org.springframework.security.web.authentication.logout.LogoutFilter@3d615b2e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7dee835, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b321262, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7573b9ee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f79f192, org.springframework.security.web.session.SessionManagementFilter@6367a688, org.springframework.security.web.access.ExceptionTranslationFilter@62aeddc8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28cd2c2]
-2020-07-20 22:52:43.442 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 22:52:43.505 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 22:52:45.285 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 22:52:45.295 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 22:52:46.225 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:52:46.954 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:52:46.971 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 22:52:46.977 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 22:52:47.371 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 22:52:47.382 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 10.819 seconds (JVM running for 12.036)
-2020-07-20 22:53:05.912 [INFO] [https-jsse-nio-8443-exec-10] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 22:53:05.913 [INFO] [https-jsse-nio-8443-exec-10] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 22:53:05.923 [INFO] [https-jsse-nio-8443-exec-10] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 10 ms
-2020-07-20 22:54:30.284 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 15952 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 22:54:30.289 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 22:54:32.886 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 22:54:33.078 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 167ms. Found 1 JPA repository interfaces.
-2020-07-20 22:54:34.824 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 22:54:34.884 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:54:34.893 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:54:34.930 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 22:54:34.934 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 22:54:35.341 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 22:54:35.343 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4909 ms
-2020-07-20 22:54:36.181 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 22:54:36.310 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 22:54:36.425 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 22:54:36.499 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 22:54:36.992 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 22:54:37.330 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 22:54:37.449 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63a9c661, org.springframework.security.web.context.SecurityContextPersistenceFilter@65c5bf0e, org.springframework.security.web.header.HeaderWriterFilter@3d615b2e, org.springframework.security.web.csrf.CsrfFilter@2eda4eeb, org.springframework.security.web.authentication.logout.LogoutFilter@3dce6dd8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2e71240b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d05f453, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d508d22, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b425577, org.springframework.security.web.session.SessionManagementFilter@40ce9049, org.springframework.security.web.access.ExceptionTranslationFilter@35dece42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bf80c29]
-2020-07-20 22:54:38.214 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 22:54:38.292 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 22:54:41.420 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 22:54:41.435 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 22:54:42.349 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:54:43.821 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:54:43.865 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 22:54:43.877 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 22:54:44.577 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 22:54:44.589 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 15.748 seconds (JVM running for 17.143)
-2020-07-20 22:54:52.425 [INFO] [https-jsse-nio-8443-exec-9] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 22:54:52.426 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 22:54:52.445 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 19 ms
-2020-07-20 22:56:00.310 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 13716 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 22:56:00.317 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 22:56:02.534 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 22:56:02.740 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 184ms. Found 1 JPA repository interfaces.
-2020-07-20 22:56:04.173 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 22:56:04.192 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:56:04.194 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:56:04.216 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 22:56:04.217 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 22:56:04.552 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 22:56:04.552 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4096 ms
-2020-07-20 22:56:05.196 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 22:56:05.297 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 22:56:05.444 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 22:56:05.484 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 22:56:06.061 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 22:56:06.348 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 22:56:06.439 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63fd4dda, org.springframework.security.web.context.SecurityContextPersistenceFilter@37a9b687, org.springframework.security.web.header.HeaderWriterFilter@1a950fdd, org.springframework.security.web.csrf.CsrfFilter@45292ec1, org.springframework.security.web.authentication.logout.LogoutFilter@7dee835, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@171dc7c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16d07cf3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@364fd4ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d6751e3, org.springframework.security.web.session.SessionManagementFilter@27dc627a, org.springframework.security.web.access.ExceptionTranslationFilter@3f8dfe74, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d5c41e5]
-2020-07-20 22:56:07.134 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 22:56:07.200 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 22:56:09.208 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 22:56:09.222 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 22:56:10.134 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:56:11.053 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:56:11.074 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 22:56:11.082 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 22:56:11.569 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 22:56:11.589 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 12.607 seconds (JVM running for 13.894)
-2020-07-20 22:56:20.781 [INFO] [https-jsse-nio-8443-exec-8] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 22:56:20.782 [INFO] [https-jsse-nio-8443-exec-8] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 22:56:20.798 [INFO] [https-jsse-nio-8443-exec-8] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 15 ms
-2020-07-20 22:57:25.178 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 3200 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 22:57:25.187 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 22:57:27.272 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 22:57:27.565 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 270ms. Found 1 JPA repository interfaces.
-2020-07-20 22:57:28.955 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 22:57:28.971 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:57:28.975 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:57:28.997 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 22:57:28.999 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 22:57:29.320 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 22:57:29.321 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4015 ms
-2020-07-20 22:57:29.984 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 22:57:30.143 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 22:57:30.222 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 22:57:30.415 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 22:57:30.983 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 22:57:31.278 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 22:57:31.434 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9b47400, org.springframework.security.web.context.SecurityContextPersistenceFilter@24c685e7, org.springframework.security.web.header.HeaderWriterFilter@4f281aaf, org.springframework.security.web.csrf.CsrfFilter@7f73ce28, org.springframework.security.web.authentication.logout.LogoutFilter@778a1250, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@388c519, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ed9f6f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5921b93c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@747835f5, org.springframework.security.web.session.SessionManagementFilter@f2b90fc, org.springframework.security.web.access.ExceptionTranslationFilter@4d93f75b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43471a7e]
-2020-07-20 22:57:32.144 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 22:57:32.223 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 22:57:34.458 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 22:57:34.473 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 22:57:35.325 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 22:57:36.234 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 22:57:36.251 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 22:57:36.254 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 22:57:36.736 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 22:57:36.746 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 12.84 seconds (JVM running for 14.055)
-2020-07-20 22:57:44.192 [INFO] [https-jsse-nio-8443-exec-10] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 22:57:44.193 [INFO] [https-jsse-nio-8443-exec-10] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 22:57:44.211 [INFO] [https-jsse-nio-8443-exec-10] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 17 ms
-2020-07-20 23:01:55.741 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 8056 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
-2020-07-20 23:01:55.750 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
-2020-07-20 23:01:57.529 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-07-20 23:01:57.665 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 119ms. Found 1 JPA repository interfaces.
-2020-07-20 23:01:58.939 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
-2020-07-20 23:01:58.957 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 23:01:58.959 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
-2020-07-20 23:01:58.978 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2020-07-20 23:01:58.979 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-20 23:01:59.271 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2020-07-20 23:01:59.272 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3402 ms
-2020-07-20 23:01:59.801 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-20 23:01:59.920 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-07-20 23:01:59.965 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-07-20 23:02:00.114 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-07-20 23:02:00.583 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-07-20 23:02:00.866 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9b47400, org.springframework.security.web.context.SecurityContextPersistenceFilter@24c685e7, org.springframework.security.web.header.HeaderWriterFilter@4f281aaf, org.springframework.security.web.csrf.CsrfFilter@7f73ce28, org.springframework.security.web.authentication.logout.LogoutFilter@778a1250, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@388c519, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ed9f6f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5921b93c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@747835f5, org.springframework.security.web.session.SessionManagementFilter@f2b90fc, org.springframework.security.web.access.ExceptionTranslationFilter@4d93f75b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43471a7e]
-2020-07-20 23:02:00.873 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2020-07-20 23:02:01.480 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2020-07-20 23:02:01.567 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
-2020-07-20 23:02:03.251 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-07-20 23:02:03.263 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-07-20 23:02:03.975 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
-2020-07-20 23:02:04.731 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
-2020-07-20 23:02:04.745 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
-2020-07-20 23:02:04.747 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
-2020-07-20 23:02:05.116 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
-2020-07-20 23:02:05.129 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 10.593 seconds (JVM running for 11.851)
-2020-07-20 23:02:17.515 [INFO] [https-jsse-nio-8443-exec-7] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-20 23:02:17.516 [INFO] [https-jsse-nio-8443-exec-7] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2020-07-20 23:02:17.527 [INFO] [https-jsse-nio-8443-exec-7] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 10 ms
+2020-07-21 20:32:36.984 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 2648 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-21 20:32:37.007 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-21 20:32:39.175 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-21 20:32:39.326 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 130ms. Found 1 JPA repository interfaces.
+2020-07-21 20:32:40.703 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-07-21 20:32:40.721 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 20:32:40.724 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-21 20:32:40.744 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-21 20:32:40.745 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-21 20:32:41.051 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-21 20:32:41.052 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3940 ms
+2020-07-21 20:32:41.567 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 20:32:41.758 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-21 20:32:41.827 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-21 20:32:42.309 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-21 20:32:42.778 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-21 20:32:43.024 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@715f45c6, org.springframework.security.web.context.SecurityContextPersistenceFilter@55acec99, org.springframework.security.web.header.HeaderWriterFilter@322204dc, org.springframework.security.web.csrf.CsrfFilter@35650279, org.springframework.security.web.authentication.logout.LogoutFilter@459003a0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b80e5a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58833798, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77724cbe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d5c41e5, org.springframework.security.web.session.SessionManagementFilter@25b38203, org.springframework.security.web.access.ExceptionTranslationFilter@168ad26f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5bde57ab]
+2020-07-21 20:32:43.058 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-21 20:32:43.779 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-21 20:32:43.847 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-21 20:32:46.514 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-21 20:32:46.528 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-21 20:32:48.167 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 20:32:49.141 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-21 20:32:49.154 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-07-21 20:32:49.157 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-21 20:32:49.526 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-21 20:32:49.537 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 13.848 seconds (JVM running for 15.444)
+2020-07-21 20:33:02.753 [INFO] [https-jsse-nio-8443-exec-8] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 20:33:02.754 [INFO] [https-jsse-nio-8443-exec-8] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2020-07-21 20:33:02.767 [INFO] [https-jsse-nio-8443-exec-8] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 13 ms
+2020-07-21 20:36:00.722 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 3636 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-21 20:36:00.738 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-21 20:36:02.335 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-21 20:36:02.478 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 130ms. Found 1 JPA repository interfaces.
+2020-07-21 20:36:03.796 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-07-21 20:36:03.816 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 20:36:03.818 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-21 20:36:03.835 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-21 20:36:03.836 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-21 20:36:04.088 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-21 20:36:04.089 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3222 ms
+2020-07-21 20:36:04.624 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 20:36:04.746 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-21 20:36:04.801 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-21 20:36:04.909 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-21 20:36:05.267 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-21 20:36:05.453 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-21 20:36:05.597 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e12a5a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@182e7eda, org.springframework.security.web.header.HeaderWriterFilter@2ed9f6f8, org.springframework.security.web.csrf.CsrfFilter@3d615b2e, org.springframework.security.web.authentication.logout.LogoutFilter@64e7d698, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1c628f6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@420a8042, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b4732dc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4877919f, org.springframework.security.web.session.SessionManagementFilter@35650279, org.springframework.security.web.access.ExceptionTranslationFilter@24c685e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fbd3e75]
+2020-07-21 20:36:06.074 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-21 20:36:06.122 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-21 20:36:08.558 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-21 20:36:08.568 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-21 20:36:09.553 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 20:36:10.210 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-21 20:36:10.224 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-07-21 20:36:10.227 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-21 20:36:10.611 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-21 20:36:10.623 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 11.145 seconds (JVM running for 12.43)
+2020-07-21 20:36:14.634 [INFO] [https-jsse-nio-8443-exec-5] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 20:36:14.635 [INFO] [https-jsse-nio-8443-exec-5] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2020-07-21 20:36:14.651 [INFO] [https-jsse-nio-8443-exec-5] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 15 ms
+2020-07-21 20:41:28.011 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 17984 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-21 20:41:28.018 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-21 20:41:29.581 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-21 20:41:29.745 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 147ms. Found 1 JPA repository interfaces.
+2020-07-21 20:41:31.032 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-07-21 20:41:31.053 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 20:41:31.056 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-21 20:41:31.078 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-21 20:41:31.079 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-21 20:41:31.337 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-21 20:41:31.338 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 3199 ms
+2020-07-21 20:41:31.830 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 20:41:31.940 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-21 20:41:31.971 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-21 20:41:32.114 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-21 20:41:32.443 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-21 20:41:32.621 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-21 20:41:32.759 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50085d9c, org.springframework.security.web.context.SecurityContextPersistenceFilter@2282400e, org.springframework.security.web.header.HeaderWriterFilter@40c06358, org.springframework.security.web.csrf.CsrfFilter@319642db, org.springframework.security.web.authentication.logout.LogoutFilter@79a13920, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@39b626e5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35dece42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d05f453, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5df7e31b, org.springframework.security.web.session.SessionManagementFilter@7f73ce28, org.springframework.security.web.access.ExceptionTranslationFilter@bb25753, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48268eec]
+2020-07-21 20:41:33.407 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-21 20:41:33.464 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-21 20:41:35.137 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-21 20:41:35.150 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-21 20:41:35.867 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 20:41:36.651 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-21 20:41:36.664 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-07-21 20:41:36.665 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-21 20:41:37.012 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-21 20:41:37.022 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 10.144 seconds (JVM running for 11.187)
+2020-07-21 20:41:45.621 [INFO] [https-jsse-nio-8443-exec-2] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 20:41:45.621 [INFO] [https-jsse-nio-8443-exec-2] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2020-07-21 20:41:45.635 [INFO] [https-jsse-nio-8443-exec-2] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 13 ms
+2020-07-21 20:45:55.394 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 8408 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-21 20:45:55.403 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-21 20:45:57.978 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-21 20:45:58.132 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 131ms. Found 1 JPA repository interfaces.
+2020-07-21 20:46:02.664 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 13284 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-21 20:46:02.671 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-21 20:46:04.723 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-21 20:46:04.959 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 217ms. Found 1 JPA repository interfaces.
+2020-07-21 20:46:06.529 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-07-21 20:46:06.554 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 20:46:06.557 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-21 20:46:06.577 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-21 20:46:06.578 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-21 20:46:07.092 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-21 20:46:07.093 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4288 ms
+2020-07-21 20:46:07.703 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 20:46:07.961 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-21 20:46:07.969 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-21 20:46:08.126 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-21 20:46:08.459 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-21 20:46:08.632 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5934153e, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d615b2e, org.springframework.security.web.header.HeaderWriterFilter@2282400e, org.springframework.security.web.csrf.CsrfFilter@68b11545, org.springframework.security.web.authentication.logout.LogoutFilter@3292d91a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b44d6d0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40ce9049, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@664e848c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3bb9ca38, org.springframework.security.web.session.SessionManagementFilter@35dece42, org.springframework.security.web.access.ExceptionTranslationFilter@7f73ce28, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@515b9d4a]
+2020-07-21 20:46:08.725 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-21 20:46:09.382 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-21 20:46:09.449 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-21 20:46:12.027 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-21 20:46:12.046 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-21 20:46:13.801 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 20:46:15.406 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-21 20:46:15.432 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-07-21 20:46:15.435 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-21 20:46:16.432 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-21 20:46:16.445 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 15.069 seconds (JVM running for 16.212)
+2020-07-21 20:46:41.067 [INFO] [https-jsse-nio-8443-exec-6] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 20:46:41.068 [INFO] [https-jsse-nio-8443-exec-6] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2020-07-21 20:46:41.081 [INFO] [https-jsse-nio-8443-exec-6] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 13 ms
+2020-07-21 20:47:36.616 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 13332 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-21 20:47:36.624 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-21 20:47:38.839 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-21 20:47:39.060 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 205ms. Found 1 JPA repository interfaces.
+2020-07-21 20:47:41.604 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-07-21 20:47:41.641 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 20:47:41.643 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-21 20:47:41.673 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-21 20:47:41.675 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-21 20:47:42.093 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-21 20:47:42.094 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 5347 ms
+2020-07-21 20:47:42.870 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 20:47:43.012 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-21 20:47:43.088 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-21 20:47:43.224 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-21 20:47:43.669 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-21 20:47:44.037 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-21 20:47:44.037 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d5c41e5, org.springframework.security.web.context.SecurityContextPersistenceFilter@61191222, org.springframework.security.web.header.HeaderWriterFilter@656a3d6b, org.springframework.security.web.csrf.CsrfFilter@79a13920, org.springframework.security.web.authentication.logout.LogoutFilter@d325518, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4cc01c7f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f3ca64a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27dc627a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43245559, org.springframework.security.web.session.SessionManagementFilter@778a1250, org.springframework.security.web.access.ExceptionTranslationFilter@4f93bf0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ea00de]
+2020-07-21 20:47:44.967 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-21 20:47:45.040 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-21 20:47:47.689 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-21 20:47:47.700 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-21 20:47:49.309 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 20:47:50.745 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-21 20:47:50.763 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-07-21 20:47:50.775 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-21 20:47:51.502 [INFO] [https-jsse-nio-8443-exec-9] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 20:47:51.503 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2020-07-21 20:47:51.540 [INFO] [https-jsse-nio-8443-exec-9] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 36 ms
+2020-07-21 20:47:51.684 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-21 20:47:51.714 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 16.236 seconds (JVM running for 17.579)
