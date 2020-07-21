@@ -470,3 +470,31 @@
 2020-07-21 21:21:18.697 [INFO] [https-jsse-nio-8443-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 18 ms
 2020-07-21 21:21:18.977 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
 2020-07-21 21:21:18.997 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 14.698 seconds (JVM running for 16.215)
+2020-07-21 21:24:30.699 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:55] Starting OracleJdbcApplication on LAPTOP-N8N1ATG7 with PID 5164 (C:\Users\rados\Projects\Java\SpringOracleJpa\target\classes started by rados in C:\Users\rados\Projects\Java\SpringOracleJpa)
+2020-07-21 21:24:30.712 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:651] No active profile set, falling back to default profiles: default
+2020-07-21 21:24:32.942 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-21 21:24:33.087 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 126ms. Found 1 JPA repository interfaces.
+2020-07-21 21:24:34.691 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8443 (https) 8080 (http)
+2020-07-21 21:24:34.717 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 21:24:34.719 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-21 21:24:34.744 [INFO] [main] [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2020-07-21 21:24:34.745 [INFO] [main] [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-21 21:24:35.118 [INFO] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2020-07-21 21:24:35.119 [INFO] [main] [org.springframework.web.context.ContextLoader:284] Root WebApplicationContext: initialization completed in 4209 ms
+2020-07-21 21:24:35.688 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 21:24:35.961 [INFO] [task-1] [org.hibernate.jpa.internal.util.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-21 21:24:35.984 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-21 21:24:36.143 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-21 21:24:36.541 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-21 21:24:36.929 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-07-21 21:24:36.957 [INFO] [main] [org.springframework.security.web.DefaultSecurityFilterChain:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55c57422, org.springframework.security.web.context.SecurityContextPersistenceFilter@401c4250, org.springframework.security.web.header.HeaderWriterFilter@4d464510, org.springframework.security.web.csrf.CsrfFilter@19b02dfd, org.springframework.security.web.authentication.logout.LogoutFilter@28cd2c2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d5c41e5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77724cbe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@661d6bb6, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@42e4e589, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22825e1e, org.springframework.security.web.session.SessionManagementFilter@2519026b, org.springframework.security.web.access.ExceptionTranslationFilter@58833798, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36c7cbe1]
+2020-07-21 21:24:37.716 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-07-21 21:24:37.794 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-07-21 21:24:39.831 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-21 21:24:39.847 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-21 21:24:40.667 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["https-jsse-nio-8443"]
+2020-07-21 21:24:41.551 [INFO] [main] [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2020-07-21 21:24:41.567 [INFO] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8443 (https) 8080 (http) with context path ''
+2020-07-21 21:24:41.569 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-07-21 21:24:41.972 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-07-21 21:24:41.985 [INFO] [main] [com.binge.radoslaw.OracleJDBC.OracleJdbcApplication:61] Started OracleJdbcApplication in 12.756 seconds (JVM running for 14.267)
