@@ -14,6 +14,11 @@
     <div class="logo">login</div>
     <div class="login-form-1">
         <form name="f" th:action="@{/login}" method="post" class="text-left" id="login-form">
+            <div th:if="${param.error}">
+                <div class="alert alert-light">
+                    invalid username or password
+                </div>
+            </div>
             <fieldset>
             <div class="login-form-main-message"></div>
             <div class="main-login-form">

@@ -44,7 +44,7 @@
 </header>
 <br>
 <main role="main" class="container">
-    <div class="col-md-8">
+    <div>
         <table class="table">
             <thead class="thead-dark">
             <tr>
@@ -60,20 +60,32 @@
             <tr th:if="${employees.empty}">
                 <td colspan="2"> No Employees Available</td>
             </tr>
-            <tr th:each="employee : ${employees}">
-                <td><span th:text="${employee.id}"> Id </span></td>
-                <td><span th:text="${employee.login}"> Login </span></td>
-                <td><span th:text="${employee.firstName}"> First Name </span></td>
-                <td><span th:text="${employee.lastName}"> Last Name </span></td>
-                <td><span th:text="${employee.currentOn}"> Current On </span></td>
-                <td>
-                    <form method="POST" th:action="@{/operators/setOnSite}">
-                        <input type="hidden" name="login" id="login" th:value="${employee.login}"/>
-                        <button type="submit" name="submit" value="login" class="btn btn-outline-dark btn-sm">Set OnSite
-                        </button>
-                    </form>
-                </td>
-            </tr>
+            <div th:each="employee : ${employees}">
+                <div th:switch="${employee.currentOn}">
+                    <tr th:case="'On Site'" class="table-active">
+                       <td><span th:text="${employee.id}"> Id </span></td>
+                       <td><span th:text="${employee.login}"> Login </span></td>
+                       <td><span th:text="${employee.firstName}"> First Name </span></td>
+                       <td><span th:text="${employee.lastName}"> Last Name </span></td>
+                       <td><span th:text="${employee.currentOn}"> Current On </span></td>
+                       <td></td>
+                   </tr>
+                    <tr th:case="*">
+                        <td><span th:text="${employee.id}"> Id </span></td>
+                        <td><span th:text="${employee.login}"> Login </span></td>
+                        <td><span th:text="${employee.firstName}"> First Name </span></td>
+                        <td><span th:text="${employee.lastName}"> Last Name </span></td>
+                        <td><span th:text="${employee.currentOn}"> Current On </span></td>
+                        <td>
+                            <form method="POST" th:action="@{/operators/setOnSite}">
+                                <input type="hidden" name="login" id="login" th:value="${employee.login}"/>
+                                <button type="submit" name="submit" value="login" class="btn btn-outline-dark btn-sm">Set OnSite
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                </div>
+            </div>
             </tbody>
         </table>
     </div>
